@@ -5,6 +5,8 @@
 }
 body {
   font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  background-color: black;
+  color: #fff;
 }
 
 .hero {
@@ -35,8 +37,11 @@ body {
   background: transparent;
 } */
 
-.nav .globe {
+.nav div .select_globe .globe {
   color: #fff;
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 8px;
 }
 
 .nav .SignIn {
@@ -49,6 +54,22 @@ body {
   cursor: pointer;
 }
 
+div .select {
+  background: transparent;
+  color: #fff;
+  width: 94px;
+  height: 36px;
+  top: 8px;
+  padding: 6px 0px 5px 23px;
+  border-radius: 3px;
+  left: 1598px;
+  cursor: pointer;
+}
+
+div .select option {
+  background: transparent;
+}
+
 .logoimg {
   width: 10.4375rem;
 }
@@ -58,6 +79,27 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+}
+
+div h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -0.005em;
+  text-align: center;
+}
+
+div h2 {
+  margin-top: 0.5rem;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.header h3 {
+  font-size: 26px;
+  font-weight: 320;
+  line-height: 33px;
+  margin-top: 1.5rem;
 }
 
 .hero-bg {
@@ -87,4 +129,32 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.header .inputs {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  width: 50rem;
+  margin-top: 20px;
+}
+
+.inputs input {
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+.header .inputs button {
+  height: 100%;
+  font-size: 1.625rem;
+  text-align: center;
+  padding: 6px 26px;
+  border: 2px solid  #e50914;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+}
+
+.greaterthan {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 6px;
 }
