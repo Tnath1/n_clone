@@ -44,8 +44,11 @@ body {
   margin-left: 8px;
 }
 
-.nav .SignIn {
+.nav  .SignIn {
+  padding-top: 5px;
+  text-align: center;
   width: 84px;
+  text-decoration: none;
   height: 34px;
   color: #fff;
   background-color: #e50914;
@@ -54,6 +57,14 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+/* .nav .navlink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
 
 .nav .SignIn:hover{
   background-color: #e44951;
@@ -256,9 +267,6 @@ main .firstsec .txt .para {
   color: rgb(60, 60, 231);
 }
 
-/* section .secd{
-  margin-right: 20px;
-} */
 
 /* faq section design */
 
@@ -378,4 +386,49 @@ section.faq div p.abovei {
   position: absolute;
   margin-top: 5px;
   margin-left: 6px;
+}
+
+/* footer section */
+body footer {
+  padding: 5rem 10rem;
+}
+
+body footer h5{
+  margin-bottom: 10px;
+  color:rgba(117, 117, 117, 1);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body footer section.flexfooter{
+  display: flex;
+  justify-content: space-between;
+}
+
+body footer section.flexfooter .footerlinks{
+  margin-top: 2rem;
+}
+
+body footer section.flexfooter .footerlinks a {
+  display: block;
+  text-decoration: none;
+  line-height: 1.8rem;
+  color:rgba(117, 117, 117, 1);
+}
+
+/* select buttom in the footer */
+footer div .select_globe .globe {
+  color: #fff;
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 8px;
+}
+
+footer div {
+  margin-top: 1rem;
+}
+
+footer p {
+  color:rgba(117, 117, 117, 1);
+  margin-top: 1rem;
 }
