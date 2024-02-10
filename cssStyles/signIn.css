@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+  background-color: black;
+  color: #fff;
+}
+
 main.backgroundhero {
   /* CSS Variable */
   --hero-height: 100vh;
@@ -29,8 +35,9 @@ main.backgroundhero .signin--bg {
   top: 0;
   left: 0;
   background: black;
-  opacity: 0.7;
+  opacity: 0.5;
 }
+
 div.main_wrapper {
   position: relative;
   display: grid;
@@ -38,15 +45,69 @@ div.main_wrapper {
   grid-template-columns: 1fr;
   min-height: var(--hero-height);
   padding: 2rem;
+  z-index: 3;
 }
 
 main.backgroundhero div.main_wrapper div.signIn--card {
+  position: relative;
   width: 450px;
   height: 660px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   margin: 0 auto;
   background: black;
   opacity: 0.7;
+  padding: 0 5rem;
+  padding-top: 3rem;
+}
+
+main.backgroundhero div.main_wrapper div.signIn--card h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+main.backgroundhero div.main_wrapper div.signIn--card .signIn--input {
+  width: 314px;
+  height: 50px;
+  background-color: gray;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+main.backgroundhero div.main_wrapper div.signIn--card .signIn--input:focus {
+  border: 1px solid gray;
+}
+
+main.backgroundhero div.main_wrapper div.signIn--card div button {
+  background-color: #e50914;
+  color: #fff;
+  width: 314px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+main.backgroundhero div.main_wrapper div.signIn--card div.flextext {
+    display: flex;
+    justify-content: space-between;
+    
+}
+main.backgroundhero div.main_wrapper div.signIn--card div.flextext p {
+    cursor: pointer;
 }
 
 
+/* footer styling */
+div.main_wrapper footer{
+    background-color: #000;
+    height: 12rem;
+    width: 100%;
+    opacity: 0.75;
+}
