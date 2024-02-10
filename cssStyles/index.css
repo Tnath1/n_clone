@@ -171,7 +171,7 @@ div h2 {
 }
 
 /* section designs */
-main section {
+main .firstsec {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 46px;
@@ -181,71 +181,130 @@ main section {
   border-bottom: 5px solid rgb(87, 87, 87);
 }
 
-main section .txtone h4 {
+main .firstsec .txtone h4 {
   line-height: 3.4rem;
   font-size: 3.125rem;
   margin-bottom: 1.2rem;
 }
 
-main section .txt .para {
+main .firstsec .txt .para {
   font-size: 1.625rem;
 }
 
-section .media {
+.firstsec .media {
   position: relative;
   margin-left: 10rem;
   cursor: pointer;
 }
-section .media img {
+.firstsec .media img {
   width: 400px;
 }
 
-section video {
+.firstsec video {
   width: 293px;
   position: absolute;
   top: 63px;
   left: 51.5px;
 }
 
-section:nth-child(even)  .txtone {
+.firstsec:nth-child(even) .txtone {
   order: 2;
 }
 /* section 2 */
 
-section .mediatwo {
+.firstsec .mediatwo {
   position: relative;
   margin-right: 10rem;
   cursor: pointer;
 }
 
-section .mediatwo div .firstimg{
-height: 4rem;
-width: 3rem;
-margin-left: 10px;
+.firstsec .mediatwo div .firstimg {
+  height: 4rem;
+  width: 3rem;
+  margin-left: 10px;
 }
-section .mediatwo div .secondimg{
-height: 3rem;
-width: 3rem;
-
+.firstsec .mediatwo div .secondimg {
+  height: 3rem;
+  width: 3rem;
 }
-section .mediatwo .flexmedia{
+.firstsec .mediatwo .flexmedia {
   height: 85px;
-display: flex; 
-border: 2px solid gray;
-border-radius: 1rem;
-padding: 5px;
-align-items: center;
-width: 18rem;
-gap: 2rem;
-position: absolute;
-top: 16.8rem;
-left: 6.8rem;
-background-color: black;
+  display: flex;
+  border: 2px solid gray;
+  border-radius: 1rem;
+  padding: 5px;
+  align-items: center;
+  width: 18rem;
+  gap: 2rem;
+  position: absolute;
+  top: 16.8rem;
+  left: 6.8rem;
+  background-color: black;
 }
-section .mediatwo div span{
+.firstsec .mediatwo div span {
   color: rgb(60, 60, 231);
 }
 
 /* section .secd{
   margin-right: 20px;
 } */
+
+/* faq section design */
+
+main .faq {
+  padding: 70px 30px;
+}
+
+main .faq .faqh1 {
+  font-size: 3.125rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+main .faq .questions {
+  max-width: 635px;
+  margin: 0 auto;
+  font-size: 1.625rem;
+}
+
+main .faq .question {
+  position: relative;
+  background-color: #303030;
+}
+
+main .faq .question .plusicon {
+  width: 30px;
+  height: 30px;
+  top: 23px;
+  right: 22px;
+  position: absolute;
+  transition: all 0.4s ease;
+}
+
+div.question .headerfaq {
+  display: block;
+  cursor: pointer;
+  padding: 20px 30px;
+  border-bottom: 3px solid #000;
+}
+
+div.question div.answer {
+  padding: 0 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  border-bottom: 4px solid black;
+}
+
+div.question input[type="checkbox"] {
+  display: none;
+}
+
+div.question input[type="checkbox"]:checked ~ div.answer {
+  padding: 30px 30px;
+  max-height: 600px;
+}
+
+div.question input[type="checkbox"]:checked ~ .headerfaq img {
+  transform: rotate(133deg);
+}
