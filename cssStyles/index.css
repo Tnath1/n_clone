@@ -52,6 +52,11 @@ body {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav .SignIn:hover{
+  background-color: #e44951;
 }
 
 div .select {
@@ -162,6 +167,12 @@ div h2 {
   background-color: #e50914;
   color: #fff;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header .inputs button:hover {
+  background-color: #e44951;
+  border: 2px solid #e44951;
 }
 
 .greaterthan {
@@ -178,7 +189,7 @@ main .firstsec {
   padding: 70px 50px;
   align-items: center;
   margin: 0rem 10rem;
-  border-bottom: 5px solid rgb(87, 87, 87);
+  border-bottom: 5px solid #222;
 }
 
 main .firstsec .txtone h4 {
@@ -253,6 +264,7 @@ main .firstsec .txt .para {
 
 main .faq {
   padding: 70px 30px;
+  border-bottom: 3px solid #222;
 }
 
 main .faq .faqh1 {
@@ -270,6 +282,11 @@ main .faq .questions {
 main .faq .question {
   position: relative;
   background-color: #303030;
+}
+
+main .faq .question:hover {
+  background-color: #494949;
+  transition: all 0.5s ease;
 }
 
 main .faq .question .plusicon {
@@ -307,4 +324,58 @@ div.question input[type="checkbox"]:checked ~ div.answer {
 
 div.question input[type="checkbox"]:checked ~ .headerfaq img {
   transform: rotate(133deg);
+}
+
+/* input field below the FAQ section */
+section.faq div p.abovei {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.faq div.inputs {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  width: 45rem;
+  margin-top: 20px;
+  margin: 0 auto;
+}
+
+.faq.inputs input {
+  color: #fff;
+  padding: 15px;
+  font-size: 1.2rem;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  margin-right: 5px;
+}
+
+/* .inputs input:focus input {
+  border: none;
+} */
+
+.faq .inputs button {
+  border-radius: 6px;
+  margin-left: 5px;
+  height: 100%;
+  font-size: 1.625rem;
+  text-align: center;
+  padding: 6px 26px;
+  border: 2px solid #e50914;
+  background-color: #e50914;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.faq .inputs button:hover {
+  background-color: #e44951;
+  border: 2px solid #e44951;
+}
+
+.greaterthan {
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 6px;
 }
