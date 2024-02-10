@@ -138,16 +138,27 @@ div h2 {
 }
 
 .inputs input {
+  color: #fff;
   padding: 15px;
   font-size: 1.2rem;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 6px;
+  margin-right: 5px;
 }
 
+/* .inputs input:focus input {
+  border: none;
+} */
+
 .header .inputs button {
+  border-radius: 6px;
+  margin-left: 5px;
   height: 100%;
   font-size: 1.625rem;
   text-align: center;
   padding: 6px 26px;
-  border: 2px solid  #e50914;
+  border: 2px solid #e50914;
   background-color: #e50914;
   color: #fff;
   cursor: pointer;
@@ -158,3 +169,83 @@ div h2 {
   margin-top: 5px;
   margin-left: 6px;
 }
+
+/* section designs */
+main section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 46px;
+  padding: 70px 50px;
+  align-items: center;
+  margin: 0rem 10rem;
+  border-bottom: 5px solid rgb(87, 87, 87);
+}
+
+main section .txtone h4 {
+  line-height: 3.4rem;
+  font-size: 3.125rem;
+  margin-bottom: 1.2rem;
+}
+
+main section .txt .para {
+  font-size: 1.625rem;
+}
+
+section .media {
+  position: relative;
+  margin-left: 10rem;
+  cursor: pointer;
+}
+section .media img {
+  width: 400px;
+}
+
+section video {
+  width: 293px;
+  position: absolute;
+  top: 63px;
+  left: 51.5px;
+}
+
+section:nth-child(even)  .txtone {
+  order: 2;
+}
+/* section 2 */
+
+section .mediatwo {
+  position: relative;
+  margin-right: 10rem;
+  cursor: pointer;
+}
+
+section .mediatwo div .firstimg{
+height: 4rem;
+width: 3rem;
+margin-left: 10px;
+}
+section .mediatwo div .secondimg{
+height: 3rem;
+width: 3rem;
+
+}
+section .mediatwo .flexmedia{
+  height: 85px;
+display: flex; 
+border: 2px solid gray;
+border-radius: 1rem;
+padding: 5px;
+align-items: center;
+width: 18rem;
+gap: 2rem;
+position: absolute;
+top: 16.8rem;
+left: 6.8rem;
+background-color: black;
+}
+section .mediatwo div span{
+  color: rgb(60, 60, 231);
+}
+
+/* section .secd{
+  margin-right: 20px;
+} */
