@@ -148,6 +148,7 @@ div h2 {
   align-items: center;
   flex-direction: column;
 }
+
 .header .inputs {
   display: grid;
   grid-template-columns: 1fr max-content;
@@ -220,6 +221,7 @@ main .firstsec .txt .para {
   margin-left: 10rem;
   cursor: pointer;
 }
+
 .firstsec .media img {
   width: 400px;
 }
@@ -265,6 +267,7 @@ main .firstsec .txt .para {
   left: 6.8rem;
   background-color: black;
 }
+
 .firstsec .mediatwo div span {
   color: rgb(60, 60, 231);
 }
