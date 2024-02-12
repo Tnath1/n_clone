@@ -38,13 +38,18 @@ main.backgroundhero .signin--bg {
   opacity: 0.5;
 }
 
+div.main_wrapper a {
+  max-width: 4rem;
+  padding: 3rem;
+}
+
 div.main_wrapper {
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr;
   min-height: var(--hero-height);
-  padding: 2rem;
+  /* padding: 2rem; */
   z-index: 3;
 }
 
@@ -95,19 +100,67 @@ main.backgroundhero div.main_wrapper div.signIn--card div button {
 }
 
 main.backgroundhero div.main_wrapper div.signIn--card div.flextext {
-    display: flex;
-    justify-content: space-between;
-    
+  display: flex;
+  justify-content: space-between;
 }
 main.backgroundhero div.main_wrapper div.signIn--card div.flextext p {
-    cursor: pointer;
+  cursor: pointer;
 }
 
-
 /* footer styling */
-div.main_wrapper footer{
-    background-color: #000;
-    height: 12rem;
-    width: 100%;
-    opacity: 0.75;
+div.main_wrapper footer {
+  background-color: #000;
+  height: 13rem;
+  width: 100%;
+  opacity: 0.7;
+}
+
+/* footer section */
+body footer {
+  padding: 2rem;
+}
+
+main.backgroundhero div.main_wrapper footer h5 {
+  margin-bottom: 10px;
+  color: rgba(117, 117, 117, 1);
+  /* font-size: 16px;
+  font-weight: 400; */
+}
+
+main.backgroundhero div.main_wrapper footer section.flexfooter {
+  display: flex;
+  justify-content: center;
+}
+
+main.backgroundhero div.main_wrapper footer section div.footerlinks a {
+  color: rgba(117, 117, 117, 1);
+  text-decoration: none;
+
+  max-width: 100%;
+  text-align: center;
+
+  line-height: 1rem;
+  /* background-color: #e50914; */
+  padding: 10px;
+
+  /* background-color: #e50914; */
+}
+footer div {
+  position: relative;
+}
+
+footer div.select_globe .globe {
+  color: #fff;
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 8px;
+}
+
+footer div {
+  margin-top: 1rem;
+}
+
+footer p {
+  color: rgba(117, 117, 117, 1);
+  margin-top: 1rem;
 }
