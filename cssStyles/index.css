@@ -46,7 +46,6 @@ body {
   opacity: 0.2;
 }
 
-
 .nav {
   display: flex;
   justify-content: space-between;
@@ -65,7 +64,7 @@ body {
   margin-left: 8px;
 }
 
-.nav  .SignIn {
+.nav .SignIn {
   padding-top: 5px;
   text-align: center;
   width: 84px;
@@ -85,9 +84,7 @@ body {
   align-items: center;
 } */
 
-
-
-.nav .SignIn:hover{
+.nav .SignIn:hover {
   background-color: #e44951;
 }
 
@@ -138,7 +135,6 @@ div h2 {
   line-height: 33px;
   margin-top: 1.5rem;
 }
-
 
 .header {
   min-height: 100%;
@@ -272,7 +268,6 @@ main .firstsec .txt .para {
   color: rgb(60, 60, 231);
 }
 
-
 /* faq section design */
 
 main .faq {
@@ -398,22 +393,21 @@ body footer {
   padding: 5rem;
   max-width: 1200px;
   margin: 0 auto;
-  
 }
 
-body footer h5{
+body footer h5 {
   margin-bottom: 10px;
-  color:rgba(117, 117, 117, 1);
+  color: rgba(117, 117, 117, 1);
   font-size: 16px;
   font-weight: 400;
 }
 
-body footer section.flexfooter{
+body footer section.flexfooter {
   display: flex;
   justify-content: space-between;
 }
 
-body footer section.flexfooter .footerlinks{
+body footer section.flexfooter .footerlinks {
   margin-top: 2rem;
 }
 
@@ -421,7 +415,7 @@ body footer section.flexfooter .footerlinks a {
   display: block;
   text-decoration: none;
   line-height: 1.8rem;
-  color:rgba(117, 117, 117, 1);
+  color: rgba(117, 117, 117, 1);
 }
 
 /* select buttom in the footer */
@@ -437,6 +431,29 @@ footer div {
 }
 
 footer p {
-  color:rgba(117, 117, 117, 1);
+  color: rgba(117, 117, 117, 1);
   margin-top: 1rem;
+}
+
+/* media query */
+@media screen and (max-width: 1450px) {
+  body {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  overflow: visible;
+  }
+
+  main .firstsec {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .firstsec:nth-child(even) .txtone {
+    order: 0;
+  }
+
+label.headerfaq img {
+  max-width: 100%;
+  align-items: center;
+}
 }
