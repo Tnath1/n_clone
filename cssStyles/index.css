@@ -395,7 +395,10 @@ section.faq div p.abovei {
 
 /* footer section */
 body footer {
-  padding: 5rem 10rem;
+  padding: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
 }
 
 body footer h5{
